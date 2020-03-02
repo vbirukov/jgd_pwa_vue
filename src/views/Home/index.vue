@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div id="home" class="content">
         <Menu/>
         <Level/>
     </div>
@@ -18,3 +18,21 @@
         }
     }
 </script>
+
+<style>
+    .content {
+        text-align: center;
+    }
+
+    #home .orange {
+        background-color: #FF6B01;
+    }
+
+    #home a {
+        cursor: pointer;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+</style>

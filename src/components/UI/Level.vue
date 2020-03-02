@@ -11,4 +11,14 @@
 </script>
 
 <style scoped>
+    #level {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        line-height: 0;
+    }
+
+    #om #level p, #surya #level p {
+        font-size: 1.5rem;
+    }
 </style>

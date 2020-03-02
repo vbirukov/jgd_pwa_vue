@@ -1,7 +1,17 @@
 <template>
-    <div id="nav">
-        <router-link to="/om">Om Namah Shivaya</router-link>
-        <router-link to="/surya">Surya Namaskar</router-link>
+    <div>
+        <router-link to="/surya" class="orange">
+            <div class="m-b-md">
+                <img src="../../assets/views/surya/asanas_yoga_printable.png" alt="surya" class="orange">
+                <p>Surya Namaskar</p>
+            </div>
+        </router-link>
+        <router-link to="/om" class="orange">
+            <div class="m-b-md">
+                <img src="../../assets/views/om/shiva_black.png" alt="om" class="orange">
+                <p>Om Namah Shivaya</p>
+            </div>
+        </router-link>
     </div>
 </template>
 
@@ -10,3 +20,12 @@
         name: 'Menu',
     }
 </script>
+<style scoped>
+    img {
+        width: 90px;
+    }
+
+    a {
+         text-decoration: none;
+     }
+</style>

@@ -1,15 +1,47 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+    <div id="app" class="flex-center position-ref full-height">
+        <router-view/>
+    </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+    html, body {
+        background-color: #F7F6F3;
+        color: #636b6f;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .full-height {
+        height: 100vh;
+    }
+
+    .flex-center {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .position-ref {
+        position: relative;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .orange {
+        background-color: #FF6B01;
+    }
+
+    .m-b-md {
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: #FF6B01;
+        font-weight: 600;
+    }
 </style>
