@@ -1,7 +1,7 @@
 <template>
     <div id="go-home">
         <router-link to="/">
-            <img id="back" alt="go home" src="../../assets/components/go_home/om-symbol-orange.png">
+            <img id="back" alt="go home" src="@/assets/components/go_home/om-symbol-orange.png">
         </router-link>
     </div>
 </template>
@@ -14,6 +14,7 @@
 
 <style scoped>
     #back {
+        z-index: 10;
         width: 50px;
         position: absolute;
         bottom: 20px;

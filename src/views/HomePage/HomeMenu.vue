@@ -2,13 +2,13 @@
     <div>
         <router-link to="/surya" class="orange">
             <div class="m-b-md">
-                <img src="../../assets/views/surya/asanas_yoga_printable.png" alt="surya" class="orange">
+                <img src="@/assets/views/surya/asanas_yoga_printable.png" alt="surya" class="orange">
                 <p>Surya Namaskar</p>
             </div>
         </router-link>
         <router-link to="/om" class="orange">
             <div class="m-b-md">
-                <img src="../../assets/views/om/shiva_black.png" alt="om" class="orange">
+                <img src="@/assets/views/om/shiva_black.png" alt="om" class="orange">
                 <p>Om Namah Shivaya</p>
             </div>
         </router-link>
@@ -17,7 +17,7 @@
 
 <script>
     export default {
-        name: 'Menu',
+        name: 'HomeMenu',
     }
 </script>
 <style scoped>
@@ -26,6 +26,6 @@
     }
 
     a {
-         text-decoration: none;
-     }
+        text-decoration: none;
+    }
 </style>

@@ -1,12 +1,17 @@
 <template>
     <div id="level">
-        <p>lvl: <span id="lvl_progress">0</span></p>
+        <p>lvl: <span v-text="value"></span></p>
     </div>
 </template>
 
 <script>
     export default {
         name: 'Level',
+        computed: {
+            value() {
+                return this.$store.state.level
+            }
+        }
     }
 </script>
 
@@ -18,7 +23,7 @@
         line-height: 0;
     }
 
-    #om #level p, #surya #level p {
+    #om-game #level p, #surya-game #level p {
         font-size: 1.5rem;
     }
 </style>

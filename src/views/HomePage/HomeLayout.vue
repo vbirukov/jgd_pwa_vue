@@ -1,20 +1,19 @@
 <template>
     <div id="home" class="content">
-        <Menu/>
-        <Level/>
+        <HomeMenu/>
+        <UserLevel/>
     </div>
 </template>
 
 <script>
-
-    import Level from '../../components/UI/Level.vue'
-    import Menu from "./menu";
+    import UserLevel from '@/components/UserInterface/UserLevel'
+    import HomeMenu from "./HomeMenu";
 
     export default {
-        name: 'Home',
+        name: 'HomePage',
         components: {
-            Menu,
-            Level
+            HomeMenu,
+            UserLevel
         }
     }
 </script>
