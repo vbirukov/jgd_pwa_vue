@@ -27,7 +27,7 @@
             const game_name='surya'
             return {
                 game_is_over: false,
-                game_length: 5,
+                game_length: 108,
                 game_name: game_name,
                 counter: localStorage.getItem(game_name + '_turn') ? localStorage.getItem(game_name + '_turn') : 0,
             }
