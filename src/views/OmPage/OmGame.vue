@@ -27,7 +27,7 @@
             const game_name='om'
             return {
                 game_is_over: false,
-                game_length: 108,
+                game_length: process.env.VUE_APP_GAME_LENGTH,
                 game_name: game_name,
                 counter: localStorage.getItem(game_name + '_turn') ? localStorage.getItem(game_name + '_turn') : 0,
             }
