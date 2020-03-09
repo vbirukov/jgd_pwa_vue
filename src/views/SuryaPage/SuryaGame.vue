@@ -5,7 +5,10 @@
                 <p>Surya Namaskar</p>
             </div>
             <div class="m-b-md">
-                <img src="@/assets/views/surya/asanas_yoga_printable.png" :alt="game_name" class="orange">
+                <img src="@/assets/views/surya/asanas_yoga_printable.png"
+                     :alt="game_name"
+                     :style="{background: gradient}"
+                     class="orange">
             </div>
             <div class="m-b-md">
                 <div id="counter" v-text="counter"></div>
@@ -30,6 +33,14 @@
                 game_length: process.env.VUE_APP_GAME_LENGTH,
                 game_name: game_name,
                 counter: localStorage.getItem(game_name + '_turn') ? localStorage.getItem(game_name + '_turn') : 0,
+            }
+        },
+        computed: {
+            gradient: function () {
+                let before = 100 - (this.counter / this.game_length * 100)
+                const delta = 2
+                return "linear-gradient(#FF6B01 " + (before - delta) + "%, #ffffff " + (before + delta) + "%)";
+
             }
         },
         methods: {
