@@ -1,19 +1,23 @@
 <template>
-    <div class="menu-root">
-        <div v-bind:key="item.name" v-for="item in mainMenu">
-            <router-link to="{item.routerLink}" class="orange">
-                <MenuPlate :name="item.name" :caption="item.caption" imgSource="item.imgSource"/>
-            </router-link>
-        </div>
+    <div>
+        <router-link to="/surya" class="orange">
+            <div class="m-b-md">
+                <img src="@/assets/views/surya/asanas_yoga_printable.png" alt="surya" class="orange">
+                <p>Surya Namaskar</p>
+            </div>
+        </router-link>
+        <router-link to="/om" class="orange">
+            <div class="m-b-md">
+                <img src="@/assets/views/om/shiva_black.png" alt="om" class="orange">
+                <p>Om Namah Shivaya</p>
+            </div>
+        </router-link>
     </div>
 </template>
 
 <script>
-    import MenuPlate from "../../components/UserInterface/MenuPlate";
-
     export default {
         name: 'HomeMenu',
-        components: {MenuPlate},
         data() {
             return {
                 mainMenu: [

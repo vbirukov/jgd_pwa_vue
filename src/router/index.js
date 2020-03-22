@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../views/HomePage/HomeLayout.vue'
 import OmPage from '../views/OmPage/OmLayout'
+import Meditations from '../views/Meditations/Meditations'
+import TalksPage from '../views/Talks/TalksLayout'
 import SuryaPage from "../views/SuryaPage/SuryaLayout";
 
 Vue.use(VueRouter)
@@ -21,6 +23,16 @@ const routes = [
         path: '/surya',
         name: 'SuryaPage',
         component: SuryaPage
+    },
+    {
+        path: '/meditations',
+        name: 'MeditationsPage',
+        component: Meditations
+    },
+    {
+        path: '/talks',
+        name: 'TalksPage',
+        component: TalksPage
     }
 ]
 

@@ -14,6 +14,10 @@
         margin: 0;
     }
 
+    h2 {
+        font-size: 32px;
+    }
+
     .full-height {
         height: 100vh;
     }
