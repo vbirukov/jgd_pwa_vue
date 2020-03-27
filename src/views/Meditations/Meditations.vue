@@ -1,19 +1,17 @@
 <template>
-    <div id="home" class="content">
+    <v-layout id="meditations" class="content">
         <MeditationsMenu />
-        <UserLevel/>
-    </div>
+    </v-layout>
 </template>
 
 <script>
-    import UserLevel from '@/components/UserInterface/UserLevel'
     import MeditationsMenu from "./MeditationsMenu";
+
 
     export default {
         name: 'MeditationsPage',
         components: {
             MeditationsMenu,
-            UserLevel
         }
     }
 </script>

@@ -25,12 +25,12 @@ const routes = [
         component: SuryaPage
     },
     {
-        path: '/meditations',
+        path: '/practice',
         name: 'MeditationsPage',
         component: Meditations
     },
     {
-        path: '/talks',
+        path: '/learn',
         name: 'TalksPage',
         component: TalksPage
     }

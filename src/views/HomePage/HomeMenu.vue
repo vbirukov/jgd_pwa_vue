@@ -1,32 +1,29 @@
 <template>
     <div class="menu-root">
-        <div v-bind:key="item.name" v-for="item in mainMenu">
-            <router-link to="{item.routerLink}" class="orange">
-                <MenuPlate :name="item.name" :caption="item.caption" imgSource="item.imgSource"/>
-            </router-link>
-        </div>
+        <ScrollMenu
+            :items="mainMenu"/>
     </div>
 </template>
 
 <script>
-    import MenuPlate from "../../components/UserInterface/MenuPlate";
+    import ScrollMenu from "../../components/UserInterface/ScrollMenu";
 
     export default {
         name: 'HomeMenu',
-        components: {MenuPlate},
+        components: {ScrollMenu},
         data() {
             return {
                 mainMenu: [
                     {
-                        routerLink: "/talks",
-                        name: "Talks",
+                        routerLink: "/learn",
+                        name: "Learn",
                         caption: "Series of Talks by H.H. Sri Sri Ravi Shankar",
                         imgSource: "@/assets/views/om/shiva_black.png"
                     },
                     {
-                        routerLink: "/meditations",
-                        name: "Meditations",
-                        caption: "A set of timers and counters for your personal mediations and a set of pre-recorded guided meditations",
+                        routerLink: "/practice",
+                        name: "Practice",
+                        caption: "A set of instruments for your personal practice and a set of pre-recorded guided meditations",
                         imgSource: "@/assets/views/om/shiva_black.png"
                     }
                 ]

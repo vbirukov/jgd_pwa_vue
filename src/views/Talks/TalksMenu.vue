@@ -1,30 +1,39 @@
 <template>
     <div>
-        <router-link to="/surya" class="orange">
-            <div class="m-b-md">
-                <img src="@/assets/views/surya/asanas_yoga_printable.png" alt="surya" class="orange">
-                <p>Bhagavad Gita</p>
-            </div>
-        </router-link>
-        <router-link to="/om" class="orange">
-            <div class="m-b-md">
-                <img src="@/assets/views/om/shiva_black.png" alt="om" class="orange">
-                <p>Ashtavakra Gita</p>
-            </div>
-        </router-link>
+        <SliderMenu
+                :menuItems="talksMenu"/>
     </div>
+
 </template>
 
 <script>
+    import SliderMenu from "../../components/UserInterface/SliderMenu";
+
     export default {
-        name: 'HomeMenu',
+        name: 'TalksMenu',
+        components: {SliderMenu},
+        data () {
+            return {
+                publicPath: process.env.BASE_URL,
+                talksMenu: [
+                    {
+                        routerLink: "/talks/ashtavakra",
+                        name: "Ashtavakra Gita",
+                        caption: "Series of Talks by H.H. Sri Sri Ravi Shankar",
+                        imgSrc: `/img/covers/ashtavakra.jpg`
+                    },
+                    {
+                        routerLink: "/talks/patanjali",
+                        name: "Patanjali Yoga Sutras",
+                        caption: "A set of instruments for your personal practice and a set of pre-recorded guided meditations",
+                        imgSrc: "img/covers/patanjali.jpg"
+                    }
+                ]
+            }
+        }
     }
 </script>
 <style scoped>
-    img {
-        width: 90px;
-    }
-
     a {
         text-decoration: none;
     }

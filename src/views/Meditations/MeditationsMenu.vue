@@ -1,36 +1,27 @@
 <template>
-    <div>
-        <router-link to="/surya" class="orange">
-            <div class="m-b-md">
-                <img src="@/assets/views/surya/asanas_yoga_printable.png" alt="surya" class="orange">
-                <p>Surya Namaskar</p>
-            </div>
-        </router-link>
-        <router-link to="/om" class="orange">
-            <div class="m-b-md">
-                <img src="@/assets/views/om/shiva_black.png" alt="om" class="orange">
-                <p>Om Namah Shivaya</p>
-            </div>
-        </router-link>
-    </div>
+    <SliderMenu
+        :menuItems="meditationsMenu"/>
 </template>
 
 <script>
+    import SliderMenu from "../../components/UserInterface/SliderMenu";
+
     export default {
-        name: 'HomeMenu',
-        data() {
+        name: 'MeditationsMenu',
+        components: {SliderMenu},
+        data () {
             return {
-                mainMenu: [
+                meditationsMenu: [
                     {
-                        routerLink: "/talks",
-                        name: "Talks",
-                        caption: "Series of Talks by H.H. Sri Sri Ravi Shankar",
-                        imgSource: "@/assets/views/om/shiva_black.png"
+                        routerLink: "/surya",
+                        name: "Surya Namaskar",
+                        caption: "Counter for Sun Slautation practice",
+                        imgSource: "@/assets/views/surya/asanas_yoga_printable.png"
                     },
                     {
-                        routerLink: "/meditations",
-                        name: "Meditations",
-                        caption: "A set of timers and counters for your personal mediations and a set of pre-recorded guided meditations",
+                        routerLink: "/om",
+                        name: "Om Namah Shivaya Chanting",
+                        caption: "A counting for slow chanting pranayam",
                         imgSource: "@/assets/views/om/shiva_black.png"
                     }
                 ]

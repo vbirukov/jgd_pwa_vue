@@ -14,18 +14,13 @@
                 <div id="counter" v-text="counter"></div>
             </div>
         </div>
-        <UserLevel/>
     </div>
 </template>
 
 <script>
-    import UserLevel from "@/components/UserInterface/UserLevel"
 
     export default {
         name: 'OmGame',
-        components: {
-            UserLevel
-        },
         data() {
             const game_name = 'om'
             return {

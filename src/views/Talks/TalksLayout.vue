@@ -1,19 +1,18 @@
 <template>
-    <div id="home" class="content">
-        <HomeMenu/>
-        <UserLevel/>
-    </div>
+    <panel>
+        <TalksMenu/>
+    </panel>
 </template>
 
 <script>
-    import HomeMenu from "../HomePage/HomeMenu";
-    import UserLevel from '@/components/UserInterface/UserLevel'
+    import TalksMenu from "./TalksMenu";
+    import panel from "../../components/UserInterface/panel"
 
     export default {
-        name: 'HomePage',
+        name: 'TalksPage',
         components: {
-            HomeMenu,
-            UserLevel
+            TalksMenu,
+            panel
         }
     }
 </script>
