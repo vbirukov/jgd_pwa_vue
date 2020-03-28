@@ -2,16 +2,18 @@
     <div>
         <SliderMenu
                 :menuItems="talksMenu"/>
+        <Player />
     </div>
 
 </template>
 
 <script>
     import SliderMenu from "../../components/UserInterface/SliderMenu";
+    import Player from "../../components/UserInterface/audioPlayer/Player";
 
     export default {
         name: 'TalksMenu',
-        components: {SliderMenu},
+        components: {SliderMenu, Player},
         data () {
             return {
                 publicPath: process.env.BASE_URL,
