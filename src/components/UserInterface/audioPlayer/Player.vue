@@ -1,5 +1,5 @@
 <template>
-    <v-app dark>
+    <v-app>
         <v-content>
             <v-container>
                 <player-title-bar></player-title-bar>
@@ -47,16 +47,9 @@
             PlayerInfoPanel,
             PlayerSearchBar
         },
+        props: ['playlist'],
         data () {
             return {
-                playlist: [
-                    {title: "Streets of Sant'Ivo", artist: "Ask Again", howl: null, display: true},
-                    {title: "Remember the Way", artist: "Ask Again", howl: null, display: true},
-                    {title: "Guardians", artist: "Ask Again", howl: null, display: true},
-                    {title: "Crusade of The Castellan", artist: "Ask Again", howl: null, display: true},
-                    {title: "Land of a Folk Divided", artist: "Ask Again", howl: null, display: true},
-                    {title: "An Innocent Sword", artist: "Ask Again", howl: null, display: true}
-                ],
                 selectedTrack: null,
                 index: 0,
                 playing: false,

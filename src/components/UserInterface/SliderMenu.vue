@@ -1,7 +1,7 @@
 <template>
     <v-layout class="content flex-column align-center fill-height">
         <v-carousel
-                height="700"
+                height="800"
                 hide-delimiter-background>
             <v-carousel-item
                     class="d-flex justify-center align-center"
@@ -11,6 +11,7 @@
                         class="ma-auto"
                         :routerLink="item.routerLink"
                         :name="item.name"
+                        :playTitle="playTitle"
                         :imgSrc="item.imgSrc"
                         :caption="item.caption"/>
             </v-carousel-item>
@@ -23,7 +24,7 @@
 
     export default {
         name: "ScrollMenu",
-        props: ['menuItems'],
+        props: ['menuItems', 'playTitle'],
         components: {Cover}
     }
 </script>
