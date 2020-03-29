@@ -1,18 +1,16 @@
 <template>
-    <panel>
+    <div>
         <TalksMenu/>
-    </panel>
+    </div>
 </template>
 
 <script>
     import TalksMenu from "./TalksMenu";
-    import panel from "../../components/UserInterface/panel"
 
     export default {
         name: 'TalksPage',
         components: {
-            TalksMenu,
-            panel
+            TalksMenu
         }
     }
 </script>

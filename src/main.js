@@ -4,8 +4,6 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
-// eslint-disable-next-line no-unused-vars
-import {Howl, Howler} from 'howler';
 
 Vue.config.productionTip = false;
 

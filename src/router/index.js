@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomePage from '../views/HomePage/HomeLayout.vue'
+import HomePage from '../views/HomePage/HomeLayout'
 import OmPage from '../views/OmPage/OmLayout'
 import Meditations from '../views/Meditations/Meditations'
 import TalksPage from '../views/Talks/TalksLayout'

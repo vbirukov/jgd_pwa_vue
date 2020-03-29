@@ -11,6 +11,8 @@
           </router-link>
         </v-toolbar>
         <router-view/>
+        <v-btn
+                onclick="test()"> TEST </v-btn>
         <UserLevel/>
       </div>
     </v-content>
@@ -21,7 +23,12 @@
   import UserLevel from "./components/UserInterface/UserLevel";
 
   export default {
-    components: {UserLevel}
+    components: {UserLevel},
+    methods: {
+      test: function() {
+        console.log('it works');
+      }
+    }
   }
 </script>
 
